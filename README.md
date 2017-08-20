@@ -1,2 +1,2 @@
 # keylogger
-keylogger tha emails keystrokes
+keylogger that emails keystrokes
